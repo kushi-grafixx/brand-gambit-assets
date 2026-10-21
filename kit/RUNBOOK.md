@@ -12,5 +12,5 @@ Read this before building an issue. `issues/01/issue.json` is the reference exam
 ## Images (1200px wide, saved as JPEG q86)
 - `cover.jpg` from `templates/cover.html`: one big number (BIG, `<small>` for the unit), BIG_SIZE 200–260 so it fits, STIPPLE_X placed behind the end of the number, KICKER "Company · City · Event", SUPPORT one line, SUBJECT_TAG 3–6 words.
 - `diagram.jpg`: `templates/diagram-mapping.html` (customer doubt → brand answer, 3 rows) or `templates/diagram-stat.html` (one number vs a benchmark). If neither fits, write a new template in `templates/` that uses `base.css` and the same rules.
-- Brand rules: Outfit only (+ mono micro-labels), paper #F5F4F0, ink #0C0C0C, Kushi Red #E8001D for ONE focal element only (3–8% of the frame), full-pill capsules, 10px card radius, no gradients/glows on the logo, no flat colour stripes, logo at true aspect ratio.
+- Brand rules: Outfit only, never a mono or second typeface (small labels are Outfit 500 uppercase, tracked), paper #F5F4F0, ink #0C0C0C, Kushi Red #E8001D for ONE focal element only (3–8% of the frame), full-pill capsules, 10px card radius, no gradients/glows on the logo, no flat colour stripes, logo at true aspect ratio.
 - Always open each rendered image and check: no overflow, no clipped text, no single-word last lines, nothing touching the edges.

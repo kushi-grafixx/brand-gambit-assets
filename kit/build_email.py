@@ -12,7 +12,7 @@ import json, sys, html, pathlib
 
 PAPER, CARD, INK, INK2, MUTED, LINE, RED = "#F5F4F0", "#FFFFFF", "#0C0C0C", "#3A3A38", "#8A8985", "#DEDCD6", "#E8001D"
 FONT = "Outfit, 'Helvetica Neue', Helvetica, Arial, sans-serif"
-MONO = "'JetBrains Mono', Menlo, Consolas, monospace"
+LABEL = FONT + ";font-weight:500"  # Outfit only; labels are tracked caps, never mono
 e = html.escape
 
 def p(text, size=17, color=INK2, weight=400, mt=0, mb=18, lh=1.65):
@@ -20,7 +20,7 @@ def p(text, size=17, color=INK2, weight=400, mt=0, mb=18, lh=1.65):
             f'color:{color};font-weight:{weight};">{text}</p>')
 
 def label(text, color=MUTED, mb=10):
-    return (f'<p style="margin:0 0 {mb}px;font-family:{MONO};font-size:11px;letter-spacing:1.6px;'
+    return (f'<p style="margin:0 0 {mb}px;font-family:{LABEL};font-size:11px;letter-spacing:1.6px;'
             f'text-transform:uppercase;color:{color};">{e(text)}</p>')
 
 def img(url, alt):
@@ -33,7 +33,7 @@ def preview(d, base):
     rows.append(f'''<tr><td style="padding:28px 24px 8px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
         <td style="font-family:{FONT};font-weight:600;font-size:13px;letter-spacing:2.4px;text-transform:uppercase;color:{INK};">The Brand Gambit</td>
-        <td align="right" style="font-family:{MONO};font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:{MUTED};">Issue {e(d["issue_no"])}</td>
+        <td align="right" style="font-family:{LABEL};font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:{MUTED};">Issue {e(d["issue_no"])}</td>
       </tr></table></td></tr>''')
     body = []
     if d.get("intro_note"):
@@ -48,11 +48,11 @@ def preview(d, base):
     body.append(p(e(d["section_intro"])))
     for i, s in enumerate(d["steps"], 1):
         body.append(f'''<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 12px;background:{CARD};border:1px solid {LINE};border-radius:10px;"><tr>
-          <td valign="top" width="44" style="padding:16px 0 16px 18px;font-family:{MONO};font-size:12px;color:{MUTED};">0{i}</td>
+          <td valign="top" width="44" style="padding:16px 0 16px 18px;font-family:{LABEL};font-size:12px;color:{MUTED};">0{i}</td>
           <td style="padding:14px 18px 14px 4px;font-family:{FONT};font-size:16px;line-height:1.55;color:{INK2};"><b style="color:{INK};font-weight:600;">{e(s["title"])}</b> {e(s["body"])}</td></tr></table>''')
     body.append(p(f'<b style="font-weight:600;">{e(d["closer"])}</b>', size=19, color=INK, mt=22, mb=8))
     srcs = " · ".join(f'<a href="{e(s["url"])}" style="color:{MUTED};">{e(s["name"])}</a>' for s in d["lead_sources"])
-    body.append(f'<p style="margin:0 0 34px;font-family:{MONO};font-size:11px;letter-spacing:1px;color:{MUTED};">SOURCE: {srcs} · company-reported figures</p>')
+    body.append(f'<p style="margin:0 0 34px;font-family:{LABEL};font-size:11px;letter-spacing:1px;color:{MUTED};">SOURCE: {srcs} · company-reported figures</p>')
     # short takes
     body.append(f'<div style="border-top:1.5px solid {INK};padding-top:22px;">' + label("Also this week", INK, 16) + '</div>')
     for t in d["short_takes"]:
@@ -63,7 +63,7 @@ def preview(d, base):
             <a href="{e(t["source_url"])}" style="color:{MUTED};font-size:13px;">{e(t["source_name"])} &rarr;</a></td></tr></table>''')
     # question
     body.append(f'''<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:18px 0 26px;background:{INK};border-radius:12px;"><tr><td style="padding:24px 24px;">
-      <p style="margin:0 0 10px;font-family:{MONO};font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:#BDBBB5;"><span style="color:{RED};">&#9679;</span>&nbsp; One question</p>
+      <p style="margin:0 0 10px;font-family:{LABEL};font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:#BDBBB5;"><span style="color:{RED};">&#9679;</span>&nbsp; One question</p>
       <p style="margin:0;font-family:{FONT};font-size:19px;line-height:1.45;color:{PAPER};font-weight:500;">{e(d["question"])}</p></td></tr></table>''')
     body.append(p(f'{e(d["studio_line"])} <a href="https://kushigrafixx.in" style="color:{INK};font-weight:600;">kushigrafixx.in &rarr;</a>', size=15))
     body.append(p(f'See you next Saturday,<br><b style="color:{INK};font-weight:600;">{e(d["signoff_name"])}</b><br><span style="color:{MUTED};font-size:14px;">{e(d["signoff_title"])}</span>', size=16, mt=10, mb=0))
@@ -88,7 +88,7 @@ def pack(d, base, issue_html):
              + p('About 10 minutes. The issue below is exactly what subscribers should see.', size=13, color=MUTED, mt=14, mb=0)
              + (p(e(d["pack_note"]), size=14, color=INK, mt=14, mb=0) if d.get("pack_note") else '')
              + '</td></tr></table>')
-    divider = (f'<p style="margin:28px 0 0;text-align:center;font-family:{MONO};font-size:11px;letter-spacing:2px;color:{MUTED};">'
+    divider = (f'<p style="margin:28px 0 0;text-align:center;font-family:{LABEL};font-size:11px;letter-spacing:2px;color:{MUTED};">'
                '&mdash;&mdash;&mdash;&nbsp; ISSUE STARTS BELOW &nbsp;&mdash;&mdash;&mdash;</p>')
     return (f'<div style="background:{PAPER};padding:24px 12px;"><div style="max-width:600px;margin:0 auto;">'
             f'{check}{divider}</div>{issue_html}</div>')
