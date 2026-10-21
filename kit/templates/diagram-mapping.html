@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<!-- DIAGRAM: MAPPING. Use when the story is "customer doubt → how the brand answers it".
+     Slots: TITLE, LEFT_HEAD, RIGHT_HEAD, L1-L3 (short questions), R1-R3 (answer, <=5 words),
+     R1_SUB-R3_SUB (one short line), OUTCOME (one line), SOURCE. -->
+<style>
+  .frame { padding: 56px 64px 48px; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 36px; }
+  .title { font-weight: 600; font-size: 40px; letter-spacing: -.02em; max-width: 1000px; text-wrap: balance; line-height: 1.15; }
+  .cols { display: grid; grid-template-columns: 1fr 96px 1.25fr; row-gap: 18px; align-items: stretch; }
+  .colhead { padding-bottom: 6px; }
+  .q, .a { border-radius: 10px; padding: 26px 28px; display: flex; flex-direction: column; justify-content: center; min-height: 118px; }
+  .q { border: 1.5px dashed #B9B7B0; background: rgba(255,255,255,.55); }
+  .q span { font-weight: 500; font-size: 30px; color: var(--ink-2); line-height: 1.2; text-wrap: balance; }
+  .a { background: var(--card); border: 1.5px solid var(--ink); }
+  .a b { font-weight: 600; font-size: 30px; line-height: 1.15; }
+  .a i { font-style: normal; font-weight: 400; font-size: 23px; color: var(--muted); margin-top: 8px; line-height: 1.3; }
+  .arrow { display: flex; align-items: center; justify-content: center; }
+  .arrow svg { width: 72px; height: 24px; }
+  .num { font-family: Mono, monospace; font-size: 15px; color: var(--muted); margin-bottom: 8px; letter-spacing: .1em; }
+  .outcome { margin-top: 30px; display: flex; justify-content: center; }
+  .outcome .pill { font-size: 19px; padding: 14px 26px; background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .foot { margin-top: 30px; display: flex; justify-content: space-between; align-items: center; }
+  .foot .mark { width: 30px; height: 30px; }
+</style></head>
+<body><div class="frame" id="frame">
+  <div class="head"><div class="title">{{TITLE}}</div></div>
+  <div class="cols">
+    <div class="label colhead">{{LEFT_HEAD}}</div><div></div><div class="label colhead">{{RIGHT_HEAD}}</div>
+
+    <div class="q"><div class="num">01</div><span>{{L1}}</span></div>
+    <div class="arrow"><svg viewBox="0 0 72 24"><path d="M2 12h62M56 4l8 8-8 8" fill="none" stroke="#0C0C0C" stroke-width="2"/></svg></div>
+    <div class="a"><b>{{R1}}</b><i>{{R1_SUB}}</i></div>
+
+    <div class="q"><div class="num">02</div><span>{{L2}}</span></div>
+    <div class="arrow"><svg viewBox="0 0 72 24"><path d="M2 12h62M56 4l8 8-8 8" fill="none" stroke="#0C0C0C" stroke-width="2"/></svg></div>
+    <div class="a"><b>{{R2}}</b><i>{{R2_SUB}}</i></div>
+
+    <div class="q"><div class="num">03</div><span>{{L3}}</span></div>
+    <div class="arrow"><svg viewBox="0 0 72 24"><path d="M2 12h62M56 4l8 8-8 8" fill="none" stroke="#0C0C0C" stroke-width="2"/></svg></div>
+    <div class="a"><b>{{R3}}</b><i>{{R3_SUB}}</i></div>
+  </div>
+  <div class="outcome"><span class="pill"><span class="dot"></span>{{OUTCOME}}</span></div>
+  <div class="foot"><span class="label">{{SOURCE}}</span><img class="mark" src="../assets/kg-icon-dark.svg"></div>
+</div></body></html>

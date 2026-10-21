@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+  .frame { height: 720px; padding: 56px 64px; display: flex; flex-direction: column; }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .hero { flex: 1; display: flex; flex-direction: column; justify-content: center; position: relative; }
+  .kicker { margin-bottom: 18px; }
+  .big { font-weight: 700; font-size: {{BIG_SIZE}}px; line-height: .9; letter-spacing: -.045em; position: relative; z-index: 1; }
+  .big small { font-size: .5em; letter-spacing: -.02em; margin-left: 10px; }
+  .support { margin-top: 26px; font-weight: 500; font-size: 40px; line-height: 1.2; color: var(--ink-2); max-width: 960px; text-wrap: balance; position: relative; z-index: 1; }
+  .stipple { left: {{STIPPLE_X}}px; top: 50%; transform: translateY(-62%); z-index: 0; }
+  .bottom { display: flex; justify-content: space-between; align-items: flex-end; border-top: 1.5px solid var(--ink); padding-top: 22px; }
+  .bottom .mono { font-size: 17px; color: var(--ink-2); }
+</style></head>
+<body><div class="frame" id="frame">
+  <div class="top">
+    <div class="brandrow"><img class="mark" src="../assets/kg-icon-dark.svg"><span class="wordmark">The Brand Gambit</span></div>
+    <span class="pill"><span class="dot"></span>{{ISSUE_LABEL}}</span>
+  </div>
+  <div class="hero">
+    <div class="label kicker">{{KICKER}}</div>
+    <div class="stipple"></div>
+    <div class="big">{{BIG}}</div>
+    <div class="support">{{SUPPORT}}</div>
+  </div>
+  <div class="bottom">
+    <span class="mono">{{SUBJECT_TAG}}</span>
+    <span class="mono">kushigrafixx.in</span>
+  </div>
+</div></body></html>

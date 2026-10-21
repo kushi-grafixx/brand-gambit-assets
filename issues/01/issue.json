@@ -1,0 +1,51 @@
+{
+  "issue_no": "01",
+  "send_date": "Saturday, 24 Oct 2026",
+  "subject": "₹25 Cr of used goods. Zero inventory.",
+  "preview_text": "A Bengaluru startup that sells one thing: the removal of doubt.",
+  "headline": "₹25 Cr of used goods. Zero inventory.",
+  "intro_note": "Quick context first. You signed up for The Brand Gambit a while back, and then it went quiet. That's on me. It's back as a weekly: every Saturday, one Indian founder story where trust did the selling, broken down so you can use it in your own brand. If that's not for you anymore, the unsubscribe link is at the bottom. No hard feelings.",
+  "cover_alt": "₹25 Cr of used goods sold in year one. Zero inventory owned.",
+  "lead_before_diagram": [
+    "Circle is a Bengaluru marketplace for pre-owned goods: phones, cameras, consoles, watches, sneakers. Chirag Kataruka and Ankit Misra started it in 2025. Last week it raised a ₹25 Cr seed round led by Nexus Venture Partners.",
+    "The company says it moved about ₹25 Cr of used goods in Bengaluru in its first year. It doesn't own any of them.",
+    "Second-hand listings aren't new. India has had them for over a decade. So why did this one work?",
+    "Because buying used from a stranger was never a listings problem. It's a fear problem. Three fears, specifically."
+  ],
+  "diagram_alt": "Three buyer fears mapped to Circle's answers: Is it real? Trust Hub verification. Will the seller vanish? Circle runs the payment. What if it breaks? Three-day guarantee.",
+  "lead_after_diagram": [
+    "Look at what Circle actually built. Trust Hubs, where products get checked by software and a person before they move. A flow where Circle handles pickup, payment and payout, so your money never sits with a stranger. A three-day guarantee that covers the exact window when a buyer finds out whether something's wrong.",
+    "None of these are features in the usual sense. Each one exists to answer a single question the buyer asks right before paying. Circle isn't really selling used goods. It's selling the removal of doubt."
+  ],
+  "section_title": "What this means for your brand",
+  "section_intro": "Most founders treat trust as a reward: build a good product and trust shows up later. In some categories that order is backwards. If your customer's biggest fear is being cheated, trust is the product, and everything else is packaging. Three things worth doing this week:",
+  "steps": [
+    {"title": "Write down the one fear.", "body": "Not a persona, not a value prop. The single worry your customer has in the ten seconds before they pay."},
+    {"title": "Find where your brand answers it.", "body": "Checkout page, packaging, the first screen of your app, your pricing page. If the answer lives in your FAQ, it's in the wrong place."},
+    {"title": "Make the answer visible, not just true.", "body": "Circle's guarantee works because buyers know about it before they buy. A promise nobody sees does no work."}
+  ],
+  "closer": "Pretty is optional. Believable isn't.",
+  "lead_sources": [
+    {"name": "Inc42, 14 Oct 2026", "url": "https://inc42.com/buzz/circle-raises-%E2%82%B925-cr-to-expand-its-pre-owned-goods-marketplace-beyond-bengaluru/"}
+  ],
+  "short_takes": [
+    {
+      "stat": "<1%",
+      "name": "Even Healthcare, Bengaluru",
+      "body": "Raised a $50M Series B led by Khosla Ventures. The number worth noticing isn't the round. Even says unplanned readmissions in its insurance-partner programmes stayed under 1%, against an industry range of 8–15%. In healthcare, the outcome is the brand.",
+      "source_name": "Inc42",
+      "source_url": "https://inc42.com/buzz/even-healthcare-raises-50-mn-to-expand-hospital-network-across-bengaluru/"
+    },
+    {
+      "stat": "₹400 Cr",
+      "name": "Boldfit, Bengaluru",
+      "body": "A brand that says it serves over 2 crore customers a year raised more than ₹400 Cr, led by Bharat Value Fund, with retail stores across India first on the list. Worth remembering: a store doesn't fix a brand, it magnifies it. An identity designed for a phone screen gets tested from twenty feet away.",
+      "source_name": "Business Today",
+      "source_url": "https://www.businesstoday.in/latest/corporate/story/from-d2c-to-retail-kl-rahul-backed-boldfit-raises-over-rs400-crore-from-bharat-value-fund-561327-2026-10-13"
+    }
+  ],
+  "question": "What's the fear your customer has right before they pay you? Hit reply and tell me. I read every one.",
+  "studio_line": "If your brand isn't answering that fear yet, that's the work I do at Kushi Grafixx.",
+  "signoff_name": "Kushi",
+  "signoff_title": "Brand designer, Kushi Grafixx"
+}

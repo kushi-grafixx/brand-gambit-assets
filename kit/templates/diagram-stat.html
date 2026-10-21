@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<!-- DIAGRAM: STAT COMPARE. Use when the story turns on one number vs a benchmark.
+     Slots: TITLE, A_LABEL, A_VALUE, A_PCT (0-100 bar width), B_LABEL, B_VALUE, B_PCT,
+     TAKEAWAY (one line), SOURCE. Bar A = the brand (red focal), bar B = the benchmark (ink outline). -->
+<style>
+  .frame { padding: 56px 64px 48px; }
+  .title { font-weight: 600; font-size: 40px; letter-spacing: -.02em; line-height: 1.15; max-width: 1000px; text-wrap: balance; margin-bottom: 48px; }
+  .row { margin-bottom: 40px; }
+  .row .top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
+  .row .name { font-weight: 500; font-size: 28px; color: var(--ink-2); }
+  .row .val { font-weight: 700; font-size: 64px; letter-spacing: -.03em; line-height: 1; }
+  .track { height: 44px; border-radius: 999px; border: 1.5px solid var(--line); background: rgba(255,255,255,.6); overflow: hidden; }
+  .fill { height: 100%; border-radius: 999px; min-width: 44px; }
+  .a .fill { background: var(--red); }
+  .b .fill { background: repeating-linear-gradient(135deg, var(--ink) 0 2px, transparent 2px 10px); border: 1.5px solid var(--ink); }
+  .take { margin-top: 12px; border-top: 1.5px solid var(--ink); padding-top: 26px; font-weight: 500; font-size: 32px; line-height: 1.25; text-wrap: balance; }
+  .foot { margin-top: 30px; display: flex; justify-content: space-between; align-items: center; }
+  .foot .mark { width: 30px; height: 30px; }
+</style></head>
+<body><div class="frame" id="frame">
+  <div class="title">{{TITLE}}</div>
+  <div class="row a"><div class="top"><span class="name">{{A_LABEL}}</span><span class="val">{{A_VALUE}}</span></div>
+    <div class="track"><div class="fill" style="width: {{A_PCT}}%"></div></div></div>
+  <div class="row b"><div class="top"><span class="name">{{B_LABEL}}</span><span class="val">{{B_VALUE}}</span></div>
+    <div class="track"><div class="fill" style="width: {{B_PCT}}%"></div></div></div>
+  <div class="take">{{TAKEAWAY}}</div>
+  <div class="foot"><span class="label">{{SOURCE}}</span><img class="mark" src="../assets/kg-icon-dark.svg"></div>
+</div></body></html>
