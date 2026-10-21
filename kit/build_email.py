@@ -86,6 +86,7 @@ def pack(d, base, issue_html):
              + label(f'Assembly pack · Issue {d["issue_no"]} · for {d["send_date"]}', RED, 12)
              + f'<ol style="margin:0;padding-left:20px;font-family:{FONT};font-size:15px;line-height:1.55;color:{INK2};">{steps}</ol>'
              + p('About 10 minutes. The issue below is exactly what subscribers should see.', size=13, color=MUTED, mt=14, mb=0)
+             + (p(e(d["pack_note"]), size=14, color=INK, mt=14, mb=0) if d.get("pack_note") else '')
              + '</td></tr></table>')
     divider = (f'<p style="margin:28px 0 0;text-align:center;font-family:{MONO};font-size:11px;letter-spacing:2px;color:{MUTED};">'
                '&mdash;&mdash;&mdash;&nbsp; ISSUE STARTS BELOW &nbsp;&mdash;&mdash;&mdash;</p>')
@@ -93,7 +94,7 @@ def pack(d, base, issue_html):
             f'{check}{divider}</div>{issue_html}</div>')
 
 def text_version(d, base):
-    out = [f"ASSEMBLY PACK - Issue {d['issue_no']} - send {d['send_date']} 9:00 AM IST",
+    out = ([d["pack_note"], ""] if d.get("pack_note") else []) + [f"ASSEMBLY PACK - Issue {d['issue_no']} - send {d['send_date']} 9:00 AM IST",
            f"Subject: {d['subject']}", f"Preview: {d['preview_text']}",
            f"Cover: {base}/cover.jpg", f"Diagram: {base}/diagram.jpg", "", "----", ""]
     if d.get("intro_note"): out += [d["intro_note"], ""]
