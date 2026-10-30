@@ -8,7 +8,7 @@
   "cover_alt": "6 in 10 nanny candidates don't clear Maasi's training, the company says.",
   "lead_before_diagram": [
     "Maasi is a Bengaluru startup that trains, places and pays nannies. Aashu Manchali, Gargi Pandey and Reshov Roy launched it publicly on 20 October. A week later it raised a ₹6 Cr pre-seed round led by Better Capital, with Antler India.",
-    "The company says more than 4,000 parents joined its waitlist in the first five days. On-demand care starts at ₹199 an hour.",
+    "The company says more than 4,000 parents joined its waitlist in the first five days. On-demand care starts at ₹199 an hour, and monthly subscriptions start at ₹5,999.",
     "Think about what that ask really is. Not a card number. A parent is handing their child to someone they met last week. There's no purchase in a family that takes more trust.",
     "So the interesting part isn't the round. It's how a brand-new company answers the three questions every parent asks before saying yes."
   ],
@@ -16,19 +16,35 @@
   "lead_after_diagram": [
     "Look at where Maasi puts its effort. The training is free and led by preschool directors, nurses and former airline cabin crew trainers. The company says about six in ten candidates don't clear it. Those who do take a 16-point psychometric assessment and go through weeks of in-person observation. And Maasi didn't start from zero. It grew out of Urban Parents Club, a community of more than 8,000 Bengaluru parents.",
     "Most brands hide their filter. They put a \"verified\" badge on the homepage and the details in an FAQ. Maasi leads with who it turns away, because a worried parent isn't reassured by how friendly you sound. They're reassured by how strict you are.",
+    "Notice what the price does and doesn't do. A ₹199 starting point lowers the cost of trying. It doesn't lower the fear. A parent who can easily afford a stranger still won't let one in the door. So the filter has to carry the brand, not the price tag, and Maasi has built its story around exactly that.",
     "One honest caveat. These are a young company's own numbers, and its background checks run after a family picks a caregiver, not before. The real test is how many placements are still running in six months. But the way it earns trust is worth copying."
   ],
   "section_title": "What this means for your brand",
-  "section_intro": "Every category has a version of this. If your customer takes a real risk on you, the strongest trust signal you own is often the thing you say no to. Three things worth doing this week:",
+  "section_intro": "Every category has a version of this. Hiring an agency, choosing a lender, booking a contractor for your home. If your customer takes a real risk on you, the strongest trust signal you own is often the thing you say no to. Three things worth doing this week:",
   "steps": [
-    {"title": "Write down your filter.", "body": "The customers, suppliers, hires or projects you turn away, and roughly how many. If you can't put a number on it, start counting."},
-    {"title": "Make it something a customer can picture.", "body": "\"Verified\" is a word anyone can use. \"Trained by nurses and preschool directors\" is a scene. Describe the process, not the badge."},
-    {"title": "Move it to where the decision happens.", "body": "Homepage, proposal, the first sales call. If your filter only lives in an FAQ, it's doing no work."}
+    {
+      "title": "Write down your filter.",
+      "body": "The customers, suppliers, hires or projects you turn away, and roughly how many. If you can't put a number on it, start counting."
+    },
+    {
+      "title": "Make it something a customer can picture.",
+      "body": "\"Verified\" is a word anyone can use. \"Trained by nurses and preschool directors\" is a scene. Describe the process, not the badge."
+    },
+    {
+      "title": "Move it to where the decision happens.",
+      "body": "Homepage, proposal, the first sales call. If your filter only lives in an FAQ, it's doing no work."
+    }
   ],
   "closer": "Friendly gets you noticed. Strict gets you trusted.",
   "lead_sources": [
-    {"name": "StartupTalky, 27 Oct 2026", "url": "https://startuptalky.com/news/maasi-raises-6-cr-pre-seed-nanny-platform/"},
-    {"name": "Indian Startup Times, 28 Oct 2026", "url": "https://www.indianstartuptimes.com/?p=23036"}
+    {
+      "name": "StartupTalky, 27 Oct 2026",
+      "url": "https://startuptalky.com/news/maasi-raises-6-cr-pre-seed-nanny-platform/"
+    },
+    {
+      "name": "Indian Startup Times, 28 Oct 2026",
+      "url": "https://www.indianstartuptimes.com/?p=23036"
+    }
   ],
   "short_takes": [
     {
